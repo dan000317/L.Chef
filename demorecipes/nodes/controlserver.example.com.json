@@ -8,9 +8,9 @@
   "automatic": {
     "memory": {
       "swap": {
-        "cached": "5112kB",
+        "cached": "5948kB",
         "total": "2097148kB",
-        "free": "2068968kB"
+        "free": "2058216kB"
       },
       "hugepages": {
         "total": "0",
@@ -19,26 +19,26 @@
         "surplus": "0"
       },
       "total": "980260kB",
-      "free": "90620kB",
-      "available": "576012kB",
-      "buffers": "41156kB",
-      "cached": "541444kB",
-      "active": "332800kB",
-      "inactive": "367568kB",
-      "dirty": "240kB",
-      "writeback": "0kB",
-      "anon_pages": "142420kB",
-      "mapped": "63348kB",
-      "slab": "109472kB",
-      "slab_reclaimable": "68064kB",
-      "slab_unreclaim": "41408kB",
-      "page_tables": "3452kB",
+      "free": "109184kB",
+      "available": "502368kB",
+      "buffers": "117112kB",
+      "cached": "344896kB",
+      "active": "260436kB",
+      "inactive": "360700kB",
+      "dirty": "120kB",
+      "writeback": "4kB",
+      "anon_pages": "183792kB",
+      "mapped": "69168kB",
+      "slab": "161696kB",
+      "slab_reclaimable": "116044kB",
+      "slab_unreclaim": "45652kB",
+      "page_tables": "4124kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2587276kB",
-      "committed_as": "541264kB",
+      "committed_as": "659436kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "17192kB",
+      "vmalloc_used": "19400kB",
       "vmalloc_chunk": "0kB",
       "hugepage_size": "2048kB"
     },
@@ -57,6 +57,30 @@
       "processor": "x86_64",
       "os": "GNU/Linux",
       "modules": {
+        "nfsd": {
+          "size": "565248",
+          "refcount": "13"
+        },
+        "auth_rpcgss": {
+          "size": "139264",
+          "refcount": "1"
+        },
+        "nfs_acl": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "lockd": {
+          "size": "110592",
+          "refcount": "1"
+        },
+        "grace": {
+          "size": "16384",
+          "refcount": "2"
+        },
+        "sunrpc": {
+          "size": "585728",
+          "refcount": "17"
+        },
         "cpuid": {
           "size": "16384",
           "refcount": "0"
@@ -370,12 +394,12 @@
         },
         "/dev/mapper/ubuntu--vg-ubuntu--lv": {
           "kb_size": "64704108",
-          "kb_used": "8333200",
-          "kb_available": "53051716",
+          "kb_used": "8354600",
+          "kb_available": "53030316",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "253904",
-          "inodes_available": "3874864",
+          "inodes_used": "254353",
+          "inodes_available": "3874415",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -763,6 +787,26 @@
             "/run/snapd/ns/lxd.mnt"
           ]
         },
+        "sunrpc": {
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/run/rpc_pipefs"
+          ]
+        },
+        "nfsd": {
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc/fs/nfsd"
+          ]
+        },
         "/dev/loop0": {
           "fs_type": "squashfs",
           "mounts": [
@@ -892,12 +936,12 @@
       "by_mountpoint": {
         "/run": {
           "kb_size": "98028",
-          "kb_used": "1012",
-          "kb_available": "97016",
+          "kb_used": "1048",
+          "kb_available": "96980",
           "percent_used": "2%",
           "total_inodes": "122532",
-          "inodes_used": "737",
-          "inodes_available": "121795",
+          "inodes_used": "772",
+          "inodes_available": "121760",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -916,12 +960,12 @@
         },
         "/": {
           "kb_size": "64704108",
-          "kb_used": "8333200",
-          "kb_available": "53051716",
+          "kb_used": "8354600",
+          "kb_available": "53030316",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "253904",
-          "inodes_available": "3874864",
+          "inodes_used": "254353",
+          "inodes_available": "3874415",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1377,19 +1421,39 @@
           "devices": [
             "nsfs"
           ]
+        },
+        "/run/rpc_pipefs": {
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "sunrpc"
+          ]
+        },
+        "/proc/fs/nfsd": {
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "nfsd"
+          ]
         }
       },
       "by_pair": {
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "98028",
-          "kb_used": "1012",
-          "kb_available": "97016",
+          "kb_used": "1048",
+          "kb_available": "96980",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "122532",
-          "inodes_used": "737",
-          "inodes_available": "121795",
+          "inodes_used": "772",
+          "inodes_available": "121760",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1406,13 +1470,13 @@
         "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
           "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
           "kb_size": "64704108",
-          "kb_used": "8333200",
-          "kb_available": "53051716",
+          "kb_used": "8354600",
+          "kb_available": "53030316",
           "percent_used": "14%",
           "mount": "/",
           "total_inodes": "4128768",
-          "inodes_used": "253904",
-          "inodes_available": "3874864",
+          "inodes_used": "254353",
+          "inodes_available": "3874415",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1850,6 +1914,24 @@
             "rw"
           ]
         },
+        "sunrpc,/run/rpc_pipefs": {
+          "device": "sunrpc",
+          "mount": "/run/rpc_pipefs",
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "nfsd,/proc/fs/nfsd": {
+          "device": "nfsd",
+          "mount": "/proc/fs/nfsd",
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
         "/dev/loop0,": {
           "device": "/dev/loop0",
           "fs_type": "squashfs"
@@ -2184,16 +2266,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "18437",
-              "packets": "164",
+              "bytes": "24611",
+              "packets": "216",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "18437",
-              "packets": "164",
+              "bytes": "24611",
+              "packets": "216",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2202,16 +2284,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "6075709",
-              "packets": "86769",
+              "bytes": "6303552",
+              "packets": "89133",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "537101138",
-              "packets": "384462",
+              "bytes": "539152000",
+              "packets": "389116",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2220,16 +2302,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "1766",
-              "packets": "23",
+              "bytes": "2016",
+              "packets": "26",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "4914",
-              "packets": "20",
+              "bytes": "5161",
+              "packets": "21",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2812,6 +2894,20 @@
           "uid": 6969,
           "shell": "/bin/sh",
           "gecos": ""
+        },
+        "_rpc": {
+          "dir": "/run/rpcbind",
+          "gid": 65534,
+          "uid": 114,
+          "shell": "/usr/sbin/nologin",
+          "gecos": ""
+        },
+        "statd": {
+          "dir": "/var/lib/nfs",
+          "gid": 65534,
+          "uid": 115,
+          "shell": "/usr/sbin/nologin",
+          "gecos": ""
         }
       },
       "group": {
@@ -3254,7 +3350,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 20271,
+      "_AVPHYS_PAGES": 19925,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 245065,
@@ -3924,6 +4020,10 @@
         "version": "5.5-1ubuntu2",
         "arch": "amd64"
       },
+      "debugedit": {
+        "version": "1:5.0-4build1",
+        "arch": "amd64"
+      },
       "deltarpm": {
         "version": "3.6.3+dfsg-2build1",
         "arch": "amd64"
@@ -4247,6 +4347,10 @@
       "keyboard-configuration": {
         "version": "1.205ubuntu3",
         "arch": "all"
+      },
+      "keyutils": {
+        "version": "1.6.1-2ubuntu3",
+        "arch": "amd64"
       },
       "klibc-utils": {
         "version": "2.0.10-4",
@@ -4894,6 +4998,10 @@
       },
       "libnfnetlink0": {
         "version": "1.0.1-3build3",
+        "arch": "amd64"
+      },
+      "libnfsidmap1": {
+        "version": "1:2.6.1-1ubuntu1.2",
         "arch": "amd64"
       },
       "libnftables1": {
@@ -5672,6 +5780,14 @@
         "version": "2.1-2ubuntu0.22.04.2",
         "arch": "all"
       },
+      "nfs-common": {
+        "version": "1:2.6.1-1ubuntu1.2",
+        "arch": "amd64"
+      },
+      "nfs-kernel-server": {
+        "version": "1:2.6.1-1ubuntu1.2",
+        "arch": "amd64"
+      },
       "nftables": {
         "version": "1.0.2-1ubuntu3",
         "arch": "amd64"
@@ -6240,7 +6356,19 @@
         "version": "8.1.2-1",
         "arch": "all"
       },
+      "rpcbind": {
+        "version": "1.2.6-2build1",
+        "arch": "amd64"
+      },
+      "rpm": {
+        "version": "4.17.0+dfsg1-4build1",
+        "arch": "amd64"
+      },
       "rpm-common": {
+        "version": "4.17.0+dfsg1-4build1",
+        "arch": "amd64"
+      },
+      "rpm2cpio": {
         "version": "4.17.0+dfsg1-4build1",
         "arch": "amd64"
       },
@@ -6609,10 +6737,10 @@
         "arch": "amd64"
       }
     },
-    "uptime_seconds": 8929,
-    "uptime": "2 hours 28 minutes 49 seconds",
-    "idletime_seconds": 17574,
-    "idletime": "4 hours 52 minutes 54 seconds",
+    "uptime_seconds": 13053,
+    "uptime": "3 hours 37 minutes 33 seconds",
+    "idletime_seconds": 23579,
+    "idletime": "6 hours 32 minutes 59 seconds",
     "root_group": "root",
     "virtualbox": {
       "host": {
@@ -6625,7 +6753,7 @@
       }
     },
     "cloud": null,
-    "ohai_time": 1692776605.3568244,
+    "ohai_time": 1692780729.6069767,
     "chef_guid": "ab258d7c-4fdd-4d6e-9ed2-12ed1608c066",
     "name": "controlserver.example.com",
     "chef_environment": "_default",
