@@ -8,9 +8,9 @@
   "automatic": {
     "memory": {
       "swap": {
-        "cached": "4436kB",
+        "cached": "5112kB",
         "total": "2097148kB",
-        "free": "2069480kB"
+        "free": "2068968kB"
       },
       "hugepages": {
         "total": "0",
@@ -19,26 +19,26 @@
         "surplus": "0"
       },
       "total": "980260kB",
-      "free": "88724kB",
-      "available": "575400kB",
-      "buffers": "31160kB",
-      "cached": "551548kB",
-      "active": "354556kB",
-      "inactive": "339696kB",
-      "dirty": "204kB",
+      "free": "90620kB",
+      "available": "576012kB",
+      "buffers": "41156kB",
+      "cached": "541444kB",
+      "active": "332800kB",
+      "inactive": "367568kB",
+      "dirty": "240kB",
       "writeback": "0kB",
-      "anon_pages": "136532kB",
-      "mapped": "56836kB",
-      "slab": "111776kB",
-      "slab_reclaimable": "70420kB",
-      "slab_unreclaim": "41356kB",
-      "page_tables": "3304kB",
+      "anon_pages": "142420kB",
+      "mapped": "63348kB",
+      "slab": "109472kB",
+      "slab_reclaimable": "68064kB",
+      "slab_unreclaim": "41408kB",
+      "page_tables": "3452kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2587276kB",
-      "committed_as": "534576kB",
+      "committed_as": "541264kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "17224kB",
+      "vmalloc_used": "17192kB",
       "vmalloc_chunk": "0kB",
       "hugepage_size": "2048kB"
     },
@@ -370,12 +370,12 @@
         },
         "/dev/mapper/ubuntu--vg-ubuntu--lv": {
           "kb_size": "64704108",
-          "kb_used": "8332580",
-          "kb_available": "53052336",
+          "kb_used": "8333200",
+          "kb_available": "53051716",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "253851",
-          "inodes_available": "3874917",
+          "inodes_used": "253904",
+          "inodes_available": "3874864",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -916,12 +916,12 @@
         },
         "/": {
           "kb_size": "64704108",
-          "kb_used": "8332580",
-          "kb_available": "53052336",
+          "kb_used": "8333200",
+          "kb_available": "53051716",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "253851",
-          "inodes_available": "3874917",
+          "inodes_used": "253904",
+          "inodes_available": "3874864",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1406,13 +1406,13 @@
         "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
           "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
           "kb_size": "64704108",
-          "kb_used": "8332580",
-          "kb_available": "53052336",
+          "kb_used": "8333200",
+          "kb_available": "53051716",
           "percent_used": "14%",
           "mount": "/",
           "total_inodes": "4128768",
-          "inodes_used": "253851",
-          "inodes_available": "3874917",
+          "inodes_used": "253904",
+          "inodes_available": "3874864",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -2184,16 +2184,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "11183",
-              "packets": "96",
+              "bytes": "18437",
+              "packets": "164",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "11183",
-              "packets": "96",
+              "bytes": "18437",
+              "packets": "164",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2202,16 +2202,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "5706470",
-              "packets": "83554",
+              "bytes": "6075709",
+              "packets": "86769",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "536642877",
-              "packets": "378895",
+              "bytes": "537101138",
+              "packets": "384462",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2220,16 +2220,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "1626",
-              "packets": "21",
+              "bytes": "1766",
+              "packets": "23",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "1858",
-              "packets": "8",
+              "bytes": "4914",
+              "packets": "20",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2805,6 +2805,13 @@
           "uid": 999,
           "shell": "/bin/false",
           "gecos": ""
+        },
+        "dan": {
+          "dir": "/home/dan",
+          "gid": 6969,
+          "uid": 6969,
+          "shell": "/bin/sh",
+          "gecos": ""
         }
       },
       "group": {
@@ -3173,6 +3180,12 @@
           "members": [
 
           ]
+        },
+        "dan": {
+          "gid": 6969,
+          "members": [
+
+          ]
         }
       }
     },
@@ -3241,7 +3254,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 19341,
+      "_AVPHYS_PAGES": 20271,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 245065,
@@ -6596,10 +6609,10 @@
         "arch": "amd64"
       }
     },
-    "uptime_seconds": 3610,
-    "uptime": "1 hours 00 minutes 10 seconds",
-    "idletime_seconds": 6993,
-    "idletime": "1 hours 56 minutes 33 seconds",
+    "uptime_seconds": 8929,
+    "uptime": "2 hours 28 minutes 49 seconds",
+    "idletime_seconds": 17574,
+    "idletime": "4 hours 52 minutes 54 seconds",
     "root_group": "root",
     "virtualbox": {
       "host": {
@@ -6612,7 +6625,7 @@
       }
     },
     "cloud": null,
-    "ohai_time": 1692771286.9338522,
+    "ohai_time": 1692776605.3568244,
     "chef_guid": "ab258d7c-4fdd-4d6e-9ed2-12ed1608c066",
     "name": "controlserver.example.com",
     "chef_environment": "_default",
