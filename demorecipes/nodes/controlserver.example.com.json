@@ -8,9 +8,9 @@
   "automatic": {
     "memory": {
       "swap": {
-        "cached": "5948kB",
+        "cached": "7128kB",
         "total": "2097148kB",
-        "free": "2058216kB"
+        "free": "2052840kB"
       },
       "hugepages": {
         "total": "0",
@@ -19,26 +19,26 @@
         "surplus": "0"
       },
       "total": "980260kB",
-      "free": "110428kB",
-      "available": "523948kB",
-      "buffers": "124152kB",
-      "cached": "358144kB",
-      "active": "277296kB",
-      "inactive": "364344kB",
-      "dirty": "80kB",
+      "free": "219464kB",
+      "available": "527816kB",
+      "buffers": "103248kB",
+      "cached": "300184kB",
+      "active": "194972kB",
+      "inactive": "369048kB",
+      "dirty": "140kB",
       "writeback": "0kB",
-      "anon_pages": "183972kB",
-      "mapped": "69516kB",
-      "slab": "161784kB",
-      "slab_reclaimable": "116088kB",
-      "slab_unreclaim": "45696kB",
-      "page_tables": "4156kB",
+      "anon_pages": "184040kB",
+      "mapped": "65668kB",
+      "slab": "123360kB",
+      "slab_reclaimable": "77120kB",
+      "slab_unreclaim": "46240kB",
+      "page_tables": "4792kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2587276kB",
-      "committed_as": "659928kB",
+      "committed_as": "1113332kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "19552kB",
+      "vmalloc_used": "20348kB",
       "vmalloc_chunk": "0kB",
       "hugepage_size": "2048kB"
     },
@@ -57,6 +57,10 @@
       "processor": "x86_64",
       "os": "GNU/Linux",
       "modules": {
+        "nfnetlink": {
+          "size": "20480",
+          "refcount": "0"
+        },
         "nfsd": {
           "size": "565248",
           "refcount": "13"
@@ -394,12 +398,12 @@
         },
         "/dev/mapper/ubuntu--vg-ubuntu--lv": {
           "kb_size": "64704108",
-          "kb_used": "8354696",
-          "kb_available": "53030220",
+          "kb_used": "8366140",
+          "kb_available": "53018776",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "254369",
-          "inodes_available": "3874399",
+          "inodes_used": "255294",
+          "inodes_available": "3873474",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -940,8 +944,8 @@
           "kb_available": "96976",
           "percent_used": "2%",
           "total_inodes": "122532",
-          "inodes_used": "774",
-          "inodes_available": "121758",
+          "inodes_used": "778",
+          "inodes_available": "121754",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -960,12 +964,12 @@
         },
         "/": {
           "kb_size": "64704108",
-          "kb_used": "8354696",
-          "kb_available": "53030220",
+          "kb_used": "8366140",
+          "kb_available": "53018776",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "254369",
-          "inodes_available": "3874399",
+          "inodes_used": "255294",
+          "inodes_available": "3873474",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1003,8 +1007,8 @@
           "kb_available": "5120",
           "percent_used": "0%",
           "total_inodes": "122532",
-          "inodes_used": "3",
-          "inodes_available": "122529",
+          "inodes_used": "4",
+          "inodes_available": "122528",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1452,8 +1456,8 @@
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "122532",
-          "inodes_used": "774",
-          "inodes_available": "121758",
+          "inodes_used": "778",
+          "inodes_available": "121754",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1470,13 +1474,13 @@
         "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
           "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
           "kb_size": "64704108",
-          "kb_used": "8354696",
-          "kb_available": "53030220",
+          "kb_used": "8366140",
+          "kb_available": "53018776",
           "percent_used": "14%",
           "mount": "/",
           "total_inodes": "4128768",
-          "inodes_used": "254369",
-          "inodes_available": "3874399",
+          "inodes_used": "255294",
+          "inodes_available": "3873474",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1512,8 +1516,8 @@
           "percent_used": "0%",
           "mount": "/run/lock",
           "total_inodes": "122532",
-          "inodes_used": "3",
-          "inodes_available": "122529",
+          "inodes_used": "4",
+          "inodes_available": "122528",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2266,16 +2270,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "25908",
-              "packets": "228",
+              "bytes": "28490",
+              "packets": "250",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "25908",
-              "packets": "228",
+              "bytes": "28490",
+              "packets": "250",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2284,16 +2288,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "6372193",
-              "packets": "89837",
+              "bytes": "6510004",
+              "packets": "91199",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "539250055",
-              "packets": "390380",
+              "bytes": "541470822",
+              "packets": "393596",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -3282,6 +3286,12 @@
           "members": [
 
           ]
+        },
+        "ssl-cert": {
+          "gid": 122,
+          "members": [
+
+          ]
         }
       }
     },
@@ -3350,7 +3360,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 17794,
+      "_AVPHYS_PAGES": 44863,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 245065,
@@ -3836,6 +3846,22 @@
         "version": "2.10.7+merged+base+2.10.8+dfsg-1",
         "arch": "all"
       },
+      "apache2": {
+        "version": "2.4.52-1ubuntu4.6",
+        "arch": "amd64"
+      },
+      "apache2-bin": {
+        "version": "2.4.52-1ubuntu4.6",
+        "arch": "amd64"
+      },
+      "apache2-data": {
+        "version": "2.4.52-1ubuntu4.6",
+        "arch": "all"
+      },
+      "apache2-utils": {
+        "version": "2.4.52-1ubuntu4.6",
+        "arch": "amd64"
+      },
       "apparmor": {
         "version": "3.0.4-2ubuntu2.2",
         "arch": "amd64"
@@ -3935,6 +3961,10 @@
       "byobu": {
         "version": "5.133-1",
         "arch": "all"
+      },
+      "bzip2": {
+        "version": "1.0.8-5build1",
+        "arch": "amd64"
       },
       "ca-certificates": {
         "version": "20230311ubuntu0.22.04.1",
@@ -4386,6 +4416,22 @@
       },
       "libappstream4": {
         "version": "0.15.2-2",
+        "arch": "amd64"
+      },
+      "libapr1": {
+        "version": "1.7.0-8ubuntu0.22.04.1",
+        "arch": "amd64"
+      },
+      "libaprutil1": {
+        "version": "1.6.1-5ubuntu4.22.04.1",
+        "arch": "amd64"
+      },
+      "libaprutil1-dbd-sqlite3": {
+        "version": "1.6.1-5ubuntu4.22.04.1",
+        "arch": "amd64"
+      },
+      "libaprutil1-ldap": {
+        "version": "1.6.1-5ubuntu4.22.04.1",
         "arch": "amd64"
       },
       "libapt-pkg6.0": {
@@ -5692,6 +5738,10 @@
         "version": "0.5",
         "arch": "all"
       },
+      "mailcap": {
+        "version": "3.70+nmu1ubuntu1",
+        "arch": "all"
+      },
       "man-db": {
         "version": "2.10.2-1",
         "arch": "amd64"
@@ -5710,6 +5760,10 @@
       },
       "media-types": {
         "version": "7.0.0",
+        "arch": "all"
+      },
+      "mime-support": {
+        "version": "3.66",
         "arch": "all"
       },
       "mlocate": {
@@ -6472,6 +6526,10 @@
         "version": "5.11-0ubuntu1",
         "arch": "all"
       },
+      "ssl-cert": {
+        "version": "1.1.2",
+        "arch": "all"
+      },
       "strace": {
         "version": "5.16-0ubuntu3",
         "arch": "amd64"
@@ -6737,10 +6795,10 @@
         "arch": "amd64"
       }
     },
-    "uptime_seconds": 13332,
-    "uptime": "3 hours 42 minutes 12 seconds",
-    "idletime_seconds": 24128,
-    "idletime": "6 hours 42 minutes 08 seconds",
+    "uptime_seconds": 13842,
+    "uptime": "3 hours 50 minutes 42 seconds",
+    "idletime_seconds": 25130,
+    "idletime": "6 hours 58 minutes 50 seconds",
     "root_group": "root",
     "virtualbox": {
       "host": {
@@ -6753,7 +6811,7 @@
       }
     },
     "cloud": null,
-    "ohai_time": 1692781008.567264,
+    "ohai_time": 1692781519.0122025,
     "chef_guid": "ab258d7c-4fdd-4d6e-9ed2-12ed1608c066",
     "name": "controlserver.example.com",
     "chef_environment": "_default",
