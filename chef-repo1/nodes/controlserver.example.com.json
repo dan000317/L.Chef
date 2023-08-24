@@ -8,9 +8,9 @@
   "automatic": {
     "memory": {
       "swap": {
-        "cached": "876kB",
+        "cached": "1080kB",
         "total": "2097148kB",
-        "free": "2090444kB"
+        "free": "2084264kB"
       },
       "hugepages": {
         "total": "0",
@@ -19,26 +19,26 @@
         "surplus": "0"
       },
       "total": "980332kB",
-      "free": "184488kB",
-      "available": "556496kB",
-      "buffers": "117936kB",
-      "cached": "340984kB",
-      "active": "366776kB",
-      "inactive": "231772kB",
-      "dirty": "448kB",
+      "free": "186120kB",
+      "available": "552928kB",
+      "buffers": "118964kB",
+      "cached": "336676kB",
+      "active": "311032kB",
+      "inactive": "281008kB",
+      "dirty": "96kB",
       "writeback": "0kB",
-      "anon_pages": "166504kB",
-      "mapped": "92376kB",
-      "slab": "132380kB",
-      "slab_reclaimable": "88696kB",
-      "slab_unreclaim": "43684kB",
-      "page_tables": "3664kB",
+      "anon_pages": "163112kB",
+      "mapped": "93816kB",
+      "slab": "129788kB",
+      "slab_reclaimable": "85532kB",
+      "slab_unreclaim": "44256kB",
+      "page_tables": "4148kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2587312kB",
-      "committed_as": "610644kB",
+      "committed_as": "1058628kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "19244kB",
+      "vmalloc_used": "20092kB",
       "vmalloc_chunk": "0kB",
       "hugepage_size": "2048kB"
     },
@@ -394,12 +394,12 @@
         },
         "/dev/mapper/ubuntu--vg-ubuntu--lv": {
           "kb_size": "64704108",
-          "kb_used": "8384044",
-          "kb_available": "53000872",
+          "kb_used": "8384568",
+          "kb_available": "53000348",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "255496",
-          "inodes_available": "3873272",
+          "inodes_used": "255609",
+          "inodes_available": "3873159",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -936,12 +936,12 @@
       "by_mountpoint": {
         "/run": {
           "kb_size": "98036",
-          "kb_used": "1020",
-          "kb_available": "97016",
+          "kb_used": "1024",
+          "kb_available": "97012",
           "percent_used": "2%",
           "total_inodes": "122541",
-          "inodes_used": "759",
-          "inodes_available": "121782",
+          "inodes_used": "761",
+          "inodes_available": "121780",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -960,12 +960,12 @@
         },
         "/": {
           "kb_size": "64704108",
-          "kb_used": "8384044",
-          "kb_available": "53000872",
+          "kb_used": "8384568",
+          "kb_available": "53000348",
           "percent_used": "14%",
           "total_inodes": "4128768",
-          "inodes_used": "255496",
-          "inodes_available": "3873272",
+          "inodes_used": "255609",
+          "inodes_available": "3873159",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1447,13 +1447,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "98036",
-          "kb_used": "1020",
-          "kb_available": "97016",
+          "kb_used": "1024",
+          "kb_available": "97012",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "122541",
-          "inodes_used": "759",
-          "inodes_available": "121782",
+          "inodes_used": "761",
+          "inodes_available": "121780",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1470,13 +1470,13 @@
         "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
           "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
           "kb_size": "64704108",
-          "kb_used": "8384044",
-          "kb_available": "53000872",
+          "kb_used": "8384568",
+          "kb_available": "53000348",
           "percent_used": "14%",
           "mount": "/",
           "total_inodes": "4128768",
-          "inodes_used": "255496",
-          "inodes_available": "3873272",
+          "inodes_used": "255609",
+          "inodes_available": "3873159",
           "inodes_percent_used": "7%",
           "fs_type": "ext4",
           "mount_options": [
@@ -2269,16 +2269,16 @@
           "lo": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "14876",
-              "packets": "182",
+              "bytes": "17941",
+              "packets": "212",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "14876",
-              "packets": "182",
+              "bytes": "17941",
+              "packets": "212",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2287,16 +2287,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "1031205",
-              "packets": "9462",
+              "bytes": "1256279",
+              "packets": "11416",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "1610355",
-              "packets": "16091",
+              "bytes": "1873052",
+              "packets": "19528",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2305,16 +2305,16 @@
           "eth1": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "3610",
-              "packets": "38",
+              "bytes": "3680",
+              "packets": "39",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "19392",
-              "packets": "105",
+              "bytes": "20426",
+              "packets": "109",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -3359,7 +3359,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 36302,
+      "_AVPHYS_PAGES": 45106,
       "_NPROCESSORS_CONF": 2,
       "_NPROCESSORS_ONLN": 2,
       "_PHYS_PAGES": 245083,
@@ -6794,10 +6794,10 @@
         "arch": "amd64"
       }
     },
-    "uptime_seconds": 14060,
-    "uptime": "3 hours 54 minutes 20 seconds",
-    "idletime_seconds": 27886,
-    "idletime": "7 hours 44 minutes 46 seconds",
+    "uptime_seconds": 15243,
+    "uptime": "4 hours 14 minutes 03 seconds",
+    "idletime_seconds": 30228,
+    "idletime": "8 hours 23 minutes 48 seconds",
     "root_group": "root",
     "virtualbox": {
       "host": {
@@ -6810,14 +6810,19 @@
       }
     },
     "cloud": null,
-    "ohai_time": 1692868185.3938417,
+    "ohai_time": 1692869368.5327573,
     "chef_guid": "525cd41e-da11-4d9c-82ec-2bb4b67cf8ab",
     "name": "controlserver.example.com",
     "chef_environment": "_default",
     "recipes": [
+      "democookbook",
+      "democookbook::default",
+      "democookbook::file",
       "democookbook::apache2"
     ],
     "expanded_run_list": [
+      "democookbook::default",
+      "democookbook::file",
       "democookbook::apache2"
     ],
     "roles": [
@@ -6830,6 +6835,8 @@
     }
   },
   "run_list": [
+    "recipe[democookbook::default]",
+    "recipe[democookbook::file]",
     "recipe[democookbook::apache2]"
   ]
 }
